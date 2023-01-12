@@ -13,7 +13,7 @@ The proposed FOMILE (Unsupervised Sequence-to-Sequence Domain Adaptation with Fo
 - install requirements:```pip3 install torch==1.2.0 pillow==6.2.1 torchvision==0.4.0 lmdb nltk natsort```
 ## Training
 ```
-CUDA_VISIBLE_DEVICES=1 python train_CE_CELoss.py 
+CUDA_VISIBLE_DEVICES=1 python train_fomile.py 
       --Transformation TPS --FeatureExtraction ResNet \ --SequenceModeling BiLSTM --Prediction Attn \
 	--src_train_data data_lmdb_release/training \
 	--src_select_data MJ-ST \
