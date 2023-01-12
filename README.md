@@ -1,5 +1,5 @@
 # FOMILE: Unsupervised Sequence-to-Sequence Domain Adpatation with Focal On Minimizing Latent Entropy in Scene Text Recognition.
-Auther: Hung Tran Tien, Thanh Duc Ngo
+Author: Hung Tran Tien, Thanh Duc Ngo
 
 Scene Text Recognition has always been a popular interest in Computer Vision field. However, due to the lack of real-world data and labelling process is time-consuming, training a recognition model is difficult. With the help of synthetic data, many proposals have been introduced with promissing results. 
 On the other hand, recognizing scene text images still faces challenges due to domain shift between synthetic and real-world domains. Moreover, heavily imbalanced character-level distribution can damages the training process and affects on the model performance. To tackle this problem, we introduced an unsupervised domain adaptation method by minimizing latent representation entropy inspired from Chang et al's SMILE by using focal mechanism. Our proposal outperform SMILE and other UDA methods with SOTA results on official scene text recognition benchmarks.
