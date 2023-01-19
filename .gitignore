@@ -12,3 +12,4 @@ stage_3_scripts
 exec_test_all.sh
 reproduce_SMILE.sh
 train_smile_cbsp.py
+result
