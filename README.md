@@ -10,7 +10,7 @@ The proposed FOMILE (Unsupervised Sequence-to-Sequence Domain Adaptation with Fo
 ## Installation
 - building environment: ```cuda==11.0, python==3.7.10```
 
-- install requirements:```pip3 install torch==1.2.0 pillow==6.2.1 torchvision==0.4.0 lmdb nltk natsort```
+- install requirements:```pip3 install torch==1.2.0 pillow==6.2.1 torchvision==0.4.0 opencv-python scipy lmdb nltk natsort```
 ## Training
 ```
 CUDA_VISIBLE_DEVICES=1 python train_fomile.py 
