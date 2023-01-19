@@ -10,8 +10,23 @@ The proposed FOMILE (Unsupervised Sequence-to-Sequence Domain Adaptation with Fo
 ## Installation
 - building environment: ```cuda==11.0, python==3.7.10```
 
-- install requirements:```pip3 install torch==1.2.0 pillow==6.2.1 torchvision==0.4.0 opencv-python scipy lmdb nltk natsort```
+- install requirements: ```pip3 install torch==1.2.0 pillow==6.2.1 torchvision==0.4.0 opencv-python scipy lmdb nltk natsort```
+## Dataset
+Training datasets is [here](https://drive.google.com/drive/folders/192UfE9agQUMNq6AgU3_E05_FcPZK4hyt), comprised of both synthetic and real-world datasets:
+* Synthetic data is an union of: **MJSynth(MJ)** and **SynthText(ST)**.
+* Real-world data is an union of: **IC13, IC15, IIIT5k and SVT**.
+* Offical benchmarks evaluation: including **IIIT5k, SVT, IC03, IC13, IC15, SVTP, CUTE**.
+
 ## Training
+**Pretrained STR framework:**
+
+FOMILE is based on TPS-ResNet-BiLSTM-Attn structure, pretrained model can be obtained [here](https://drive.google.com/drive/folders/15WPsuPJDCzhp2SvYZLRj8mAlT3zmoAMW).
+
+**FOMILE pretrained model:**
+
+Will be updated soon.
+
+* Add pretrained model to ```pretrained/```.
 ```
 CUDA_VISIBLE_DEVICES=1 python train_fomile.py 
       --Transformation TPS --FeatureExtraction ResNet \ --SequenceModeling BiLSTM --Prediction Attn \
