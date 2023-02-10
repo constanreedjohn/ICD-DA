@@ -1,4 +1,4 @@
-# FOMILE: Unsupervised Sequence-to-Sequence Domain Adpatation with Focal On Minimizing Latent Entropy in Scene Text Recognition.
+# SU-FOCALID: Sequence-to-Sequence Unsupervised Domain Adpatation with Focal On Imbalance Distribution in Scene Text Recognition.
 Author: Hung Tran Tien, Thanh Duc Ngo
 
 Scene Text Recognition has always been a popular interest in Computer Vision field. However, due to the lack of real-world data and labelling process is time-consuming, training a recognition model is difficult. With the help of synthetic data, many proposals have been introduced with promissing results. 
