@@ -2,10 +2,10 @@
 Author: Hung Tran Tien, Thanh Duc Ngo
 
 Scene Text Recognition has always been a popular interest in Computer Vision field. However, due to the lack of real-world data and labelling process is time-consuming, training a recognition model is difficult. With the help of synthetic data, many proposals have been introduced with promissing results. 
-On the other hand, recognizing scene text images still faces challenges due to domain shift between synthetic and real-world domains. Moreover, heavily imbalanced character-level distribution can damages the training process and affects on the model performance. To tackle this problem, we introduced an unsupervised domain adaptation method by minimizing latent representation entropy inspired from Chang et al's SMILE by using focal mechanism. Our proposal outperform SMILE and other UDA methods with SOTA results on official scene text recognition benchmarks.
+On the other hand, recognizing scene text images still faces challenges due to domain shift between synthetic and real-world domains. Moreover, heavily imbalanced character-level distribution can damages the training process and affects on the model performance. To tackle this problem, we introduced an unsupervised domain adaptation method by minimizing latent representation entropy using focal mechanism. Our proposal outperform other UDA methods with SOTA results on official scene text recognition benchmarks.
 
 ## Overview
-The proposed FOMILE (Unsupervised Sequence-to-Sequence Domain Adaptation with Focal On Minimizing Latent Entropy in Scene Text Recognition.) is an UDA method with minimizing latent representation entropy for scene text recognition inspired by Chang et al's SMILE with focal mechanism.
+The proposed SU-FOCALID (Sequence-to-Sequence Unsupervised Domain Adpatation with Focal On Imbalance Distribution in Scene Text Recognition.) is an UDA method with minimizing latent representation entropy for scene text recognition.
 
 ## Installation
 - building environment: ```cuda==11.0, python==3.7.10```
@@ -20,15 +20,15 @@ Training datasets is [here](https://drive.google.com/drive/folders/192UfE9agQUMN
 ## Training
 **Pretrained STR framework:**
 
-FOMILE is based on TPS-ResNet-BiLSTM-Attn structure, pretrained model can be obtained [here](https://drive.google.com/drive/folders/15WPsuPJDCzhp2SvYZLRj8mAlT3zmoAMW).
+SU-FOCALID is based on TPS-ResNet-BiLSTM-Attn structure, pretrained model can be obtained [here](https://drive.google.com/drive/folders/15WPsuPJDCzhp2SvYZLRj8mAlT3zmoAMW).
 
-**FOMILE pretrained model:**
+**SU-FOCALID pretrained model:**
 
 Will be updated soon.
 
 * Add pretrained model to ```pretrained/```.
 ```
-CUDA_VISIBLE_DEVICES=1 python train_fomile.py 
+CUDA_VISIBLE_DEVICES=1 python train_focalid.py 
       --Transformation TPS --FeatureExtraction ResNet \ --SequenceModeling BiLSTM --Prediction Attn \
 	--src_train_data data_lmdb_release/training \
 	--src_select_data MJ-ST \
