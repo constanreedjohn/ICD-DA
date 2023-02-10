@@ -1,12 +1,12 @@
-CUDA_VISIBLE_DEVCES=0 python train_fomile.py --Transformation TPS --FeatureExtraction ResNet --SequenceModeling BiLSTM --Prediction Attn \
-	--experiment_name /FOMILE/CEL_CE/ \
-	--src_train_data /data/hungtt/KLTN/SMILE/data_lmdb_release/training \
+CUDA_VISIBLE_DEVCES=0 python train_focalid.py --Transformation TPS --FeatureExtraction ResNet --SequenceModeling BiLSTM --Prediction Attn \
+	--experiment_name /FOCALID/CEL_CE/ \
+	--src_train_data /data/data_lmdb_release/training \
 	--src_select_data MJ-ST \
 	--src_batch_ratio 0.5-0.5 \
-	--tar_train_data /data/hungtt/KLTN/SMILE/data_lmdb_release/validation \
+	--tar_train_data /data//data_lmdb_release/validation \
 	--tar_select_data real_data \
 	--tar_batch_ratio 1.0 \
-	--valid_data /data/hungtt/KLTN/SMILE/data_lmdb_release/evaluation/IC15_1811 \
+	--valid_data /data/data_lmdb_release/evaluation/IC15_1811 \
 	--batch_size 64 --lr 1 \
 	--workers 16 \
 	--num_iter 30000 \
