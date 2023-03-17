@@ -8,9 +8,16 @@ On the other hand, recognizing scene text images still faces challenges due to d
 The proposed SU-FOCALID (Sequence-to-Sequence Unsupervised Domain Adpatation with Focal On Imbalance Distribution in Scene Text Recognition.) is an UDA method with minimizing latent representation entropy for scene text recognition.
 
 ## Installation
-- building environment: ```cuda==11.0, python==3.7.10```
+- building environment: ```cuda==11.0, python>=3.7.10```
 
-- install requirements: ```pip3 install torch==1.2.0 pillow==6.2.1 torchvision==0.4.0 opencv-python scipy lmdb nltk natsort```
+- install requirements: 
+```
+# Install torch
+pip install torch==1.10.1+cu102 torchvision==0.11.2+cu102 torchaudio==0.10.1 -f https://download.pytorch.org/whl/cu102/torch_stable.html
+# Other packages
+pip install pillow==6.2.1 numpy opencv-python scipy lmdb nltk natsort six
+```
+
 ## Dataset
 Training datasets is [here](https://drive.google.com/drive/folders/192UfE9agQUMNq6AgU3_E05_FcPZK4hyt), comprised of both synthetic and real-world datasets:
 * Synthetic data is an union of: **MJSynth(MJ)** and **SynthText(ST)**.
