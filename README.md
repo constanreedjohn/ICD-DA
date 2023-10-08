@@ -1,11 +1,11 @@
-# SU-FOCALID: Sequence-to-Sequence Unsupervised Domain Adpatation with Focal On Imbalance Distribution in Scene Text Recognition.
+# ICD-DA: Sequence-to-Sequence Unsupervised Domain Adpatation with Focal On Imbalance Distribution in Scene Text Recognition.
 Author: Hung Tran Tien, Thanh Duc Ngo
 
 Scene Text Recognition has always been a popular interest in Computer Vision field. However, due to the lack of real-world data and labelling process is time-consuming, training a recognition model is difficult. With the help of synthetic data, many proposals have been introduced with promissing results. 
 On the other hand, recognizing scene text images still faces challenges due to domain shift between synthetic and real-world domains. Moreover, heavily imbalanced character-level distribution can damages the training process and affects on the model performance. To tackle this problem, we introduced an unsupervised domain adaptation method by minimizing latent representation entropy using focal mechanism. Our proposal outperform other UDA methods with SOTA results on official scene text recognition benchmarks.
 
 ## Overview
-The proposed SU-FOCALID (Sequence-to-Sequence Unsupervised Domain Adpatation with Focal On Imbalance Distribution in Scene Text Recognition.) is an UDA method with minimizing latent representation entropy for scene text recognition.
+The proposed ICD-DA is an UDA method with minimizing latent representation entropy for scene text recognition.
 
 ## Installation
 - building environment: ```cuda==11.0, python>=3.7.10```
@@ -27,9 +27,9 @@ Training datasets is [here](https://drive.google.com/drive/folders/192UfE9agQUMN
 ## Training
 **Pretrained STR framework:**
 
-SU-FOCALID is based on TPS-ResNet-BiLSTM-Attn structure, pretrained model can be obtained [here](https://drive.google.com/drive/folders/15WPsuPJDCzhp2SvYZLRj8mAlT3zmoAMW).
+ICD-DA is based on TPS-ResNet-BiLSTM-Attn structure, pretrained model can be obtained [here](https://drive.google.com/drive/folders/15WPsuPJDCzhp2SvYZLRj8mAlT3zmoAMW).
 
-**SU-FOCALID pretrained model:**
+**ICD-DA pretrained model:**
 
 Will be updated soon.
 
